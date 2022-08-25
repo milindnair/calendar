@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    flex-direction: row-reverse;   
+    position:fixed;top:25%;left:19%;
+    height: 400px;
+    width:820px;
+}
+.main .Calendar{
+    background-color: aqua;
+    width:500px;
+}
+
+.main .images{
+    background-color: black;
+    width:320px;
+}
