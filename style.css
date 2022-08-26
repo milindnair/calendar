@@ -24,7 +24,7 @@
 
 
 
-.Month{
+.TopContainer{
     width:1020px;
     height: 134px;
     display:flex;
@@ -32,54 +32,66 @@
     position:absolute;top:14%;left:12%;
     background-color:#e55e39;
     border-radius: 12px 12px 0px 0px;
-    word-spacing: 100 px;
-    
-}
-
-#Previous{
-    position:absolute;top:22%;left:-1%;
-    font-size:40px;    
-    transform: rotate(180deg);
-}
-
-#Next{
-    position:absolute;top:19%;left:9.5%;
-    font-size:40px; 
-    
-}
-
-#Previou{
-    position:absolute;top:22%;left:20%;
-    font-size:40px;    
-    transform: rotate(180deg);
-}
-
-#Nex{
-    position:absolute;top:19%;left:34%;
-    font-size:40px; 
     
 }
 
 
 
-.Month span{
+
+.TopContainer span{
     position:relative;top:30%;
     letter-spacing: 0.1rem;
-    padding:20px;   
+    padding:20px;
+    font-size: 50px;     
     
 }
 
-#Mon{
-    font-size:40px;
-    position:absolute;top:22%;left:3.5%;
-    color:#FFCA4B;
+.TopContainer div{
+    text-align: center;    
+    margin-left: 4px;
+    
+}
+.TopContainer .Month{    
+    width:170px;    
+}
+.TopContainer .Year{    
+    width:170px;  
+    margin-left: 15px;
 }
 
-#Year{
-    font-size: 40px;
-    position:absolute;top:22%;left:25%;
-    color:#FFCA4B;
+#month{
+    margin-left:11%;
+    
 }
+
+#year{
+    margin-left: 10%;
+}
+
+.Month .fa-angle-right{
+    position: absolute;left:14%;
+}
+
+.Year .fa-angle-right{
+    position:absolute;left:33%;
+}
+
+.TopContainer .fas{
+    background-color: rgba(0,0,0,0.7);
+    color:#E76642;
+    border-radius: 50%;
+    width:30px;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;top:42%;
+    cursor: pointer;
+    transition:all 0.4s;
+}
+.TopContainer .fas:hover{
+    background-color: rgba(0, 0, 0, 1);
+}
+
+
 
 .main .Calendar{
     background-color:#232227;
