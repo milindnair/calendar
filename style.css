@@ -19,6 +19,8 @@
     background-image: url(https://static.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg);
     background-size: cover;
     border-radius: 12px 12px 2px 2px;
+    box-shadow: 5px 10px 18px #010712;
+    -webkit-box-shadow: 5px 10px 18px #010712;
     
 }
 
@@ -32,6 +34,7 @@
     position:absolute;top:14%;left:12%;
     background-color:#e55e39;
     border-radius: 12px 12px 0px 0px;
+    justify-content: center;
     
 }
 
@@ -48,10 +51,11 @@
 
 .TopContainer div{
     text-align: center;    
-    margin-left: 4px;
+    
     
 }
-.TopContainer .Month{    
+.TopContainer .Month{   
+     
     width:170px;    
 }
 .TopContainer .Year{    
@@ -69,13 +73,17 @@
 }
 
 .Month .fa-angle-right{
-    position: absolute;left:14%;
+    position: absolute;left:48%;
 }
 
-.Year .fa-angle-right{
-    position:absolute;left:33%;
+.Year .fa-angle-up.up{
+    position: absolute;top:25%;
+        
 }
 
+.Year .fa-angle-down.down{
+    position: absolute;top:55%;
+}
 .TopContainer .fas{
     background-color: rgba(0,0,0,0.7);
     color:#E76642;
@@ -91,12 +99,17 @@
     background-color: rgba(0, 0, 0, 1);
 }
 
+.TopContainer .Date{
+    position:absolute;top: 30%;right:40%;
+    font-size: 40px;
+}
 
 
 .main .Calendar{
     background-color:#232227;
     width:700px;
-    border-radius: 12px;
+    
+   
 }
 
 .main .images{    
@@ -116,6 +129,8 @@
     display: flex;
     align-items: center;
     background-color:#232227;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;   
   }
   
   #weekdays div {
@@ -136,17 +151,36 @@
     flex-wrap: wrap;
     text-align:center;
     background-color:#232227;
-    
+    padding:10px 0px;
+    height:300px;
+    color:#ddd7ee;
     
   }
 
   .days div{
     color:white;
-    width:100px;
+    width: calc(100%/7);
     background-color:#232227;    
     color:#E2E2E2;
-    font-size: 30px;
-    margin-bottom: 29.5px;
-    border-radius: 12px;
-    
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    transition:all 0.4s;
+    cursor:pointer;
+    border-radius: 50%;
+    height:30px;       
   }
+
+ .days .today{
+    background-color: #e55e39;  
+    color:#232227;
+
+ }
+
+ .days div:hover{
+    background-color: #ddd7ee;
+    color:#232227;
+    
+    
+ }
+  
