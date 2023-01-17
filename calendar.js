@@ -50,7 +50,7 @@ for(i=1;i<=EndDate;i++)
 var imagenum = monthNames.indexOf(document.getElementById("month").innerHTML);
 console.log(imagenum);
 console.log(document.getElementById("month").innerHTML);
-var image = "/images/img" + (imagenum+1) + ".jpg";
+var image = "./images/img" + (imagenum+1) + ".jpg";
 var image1 = document.querySelector("img");
 image1.setAttribute("src",image)
 
