@@ -45,6 +45,15 @@ for(i=1;i<=EndDate;i++)
     document.getElementsByClassName("days")[0].innerHTML = cells; 
   }
 }
+
+/* This is setting the image to the current month. */
+var imagenum = monthNames.indexOf(document.getElementById("month").innerHTML);
+console.log(imagenum);
+console.log(document.getElementById("month").innerHTML);
+var image = "/images/img" + (imagenum+1) + ".jpg";
+var image1 = document.querySelector("img");
+image1.setAttribute("src",image)
+
 };
 
 /* This is adding an event listener to the previous and next buttons. When the previous button is
@@ -71,3 +80,4 @@ document.querySelector(".prev").addEventListener("click", () => {
   });
   
   renderCalendar();
+
